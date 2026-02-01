@@ -30,7 +30,7 @@ fun run_simulation(betAmount: Int, rounds: Int, winOdds: Int, numPermutations: I
         }
 
         totalWinnings += winnings
-        println("Win rate: ${wins / rounds.toDouble()}%")
+        println("Win rate: ${(wins / rounds.toDouble()) * 100}%")
         if (winnings >= 0) {
             println("You won: $$winnings!")
         } else {
